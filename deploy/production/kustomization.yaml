@@ -11,4 +11,4 @@ images:
   - name: ghcr.io/cefege/mihaimateias.com
     newTag: sha-d06ae695d61a
   - name: ghcr.io/cefege/hp2-web
-    newTag: sha-4ac3dabaa0aa
+    newTag: sha-c2d2038d0828
