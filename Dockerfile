@@ -1,7 +1,8 @@
 FROM rust:1-bookworm AS builder
 WORKDIR /app
 
-RUN curl -L --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/cargo-bins/cargo-binstall/main/install-from-binary.sh | bash \
+RUN curl -fsSL https://github.com/cargo-bins/cargo-binstall/releases/latest/download/cargo-binstall-x86_64-unknown-linux-musl.tgz \
+ | tar -xz -C /usr/local/cargo/bin \
  && cargo binstall dioxus-cli@0.7.10 -y \
  && rustup target add wasm32-unknown-unknown
 
