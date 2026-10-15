@@ -70,10 +70,9 @@ pub fn HarryPotter2() -> Element {
                 h2 { "Play" }
                 ol {
                     li { "Click " a { href: HP2_PLAY_URL, "Play now" } "." }
-                    li { "In the game choose " strong { "Game Data → Import retail game…" } "." }
-                    li { "Pick the game folder you found above." }
+                    li { "Click " strong { "Choose your game folder" } " and pick the folder you found above." }
                     li { "If the browser asks to “upload” files, say yes. They stay on your device." }
-                    li { strong { "New Game" } "." }
+                    li { "Wait for the one-time install, then click " strong { "Start playing" } "." }
                 }
             }
 
