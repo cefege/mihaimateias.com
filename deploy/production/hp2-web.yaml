@@ -7,6 +7,10 @@ metadata:
     app.kubernetes.io/part-of: mihaimateias
 spec:
   replicas: 1
+  # The page loads hp2_game.js and hp2_game.wasm as separate requests; they
+  # must come from the same build. Never run old and new pods side by side.
+  strategy:
+    type: Recreate
   selector:
     matchLabels:
       app.kubernetes.io/name: hp2-web

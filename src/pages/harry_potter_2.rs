@@ -84,7 +84,8 @@ pub fn HarryPotter2() -> Element {
             section {
                 h2 { "Problems" }
                 ul {
-                    li { "“No System/Default.ini found”: you picked the wrong folder. Pick the one that contains " code { "System" } "." }
+                    li { "“This folder does not contain the game”: you picked the wrong folder. Pick the one that contains " code { "Textures" } " with " code { "HP2_Master.utx" } " inside." }
+                    li { "“This doesn’t look like the original game folder”: pick the folder the game was installed to, not a copy made by another tool." }
                     li { "“This browser cannot run the game”: switch to Chrome, Edge or Firefox." }
                 }
             }
