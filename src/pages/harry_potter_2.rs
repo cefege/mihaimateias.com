@@ -22,7 +22,7 @@ pub fn HarryPotter2() -> Element {
             section {
                 h2 { "What you need" }
                 ul {
-                    li { "The PC game (2002) installed, or a copy of its installed folder." }
+                    li { "The PC game (2002): its installed folder, or the game CD as an " code { ".iso" } " file." }
                     li { "A supported browser: Chrome, Edge or Firefox on a computer, or Chrome/Firefox on Android." }
                     li { "Not supported: iPhone and iPad." }
                 }
@@ -67,10 +67,16 @@ pub fn HarryPotter2() -> Element {
             }
 
             section {
+                h2 { "Or use the game CD as an .iso" }
+                p { "If you have the CD as an " code { ".iso" } " file, you don't need an installed folder. The game files are unpacked from it inside your browser; nothing is uploaded and the original installer never runs." }
+                p { "If the " code { ".iso" } " is open as a disc on your computer, eject it first." }
+            }
+
+            section {
                 h2 { "Play" }
                 ol {
                     li { "Click " a { href: HP2_PLAY_URL, "Play now" } "." }
-                    li { "Click " strong { "Choose your game folder" } " and pick the folder you found above." }
+                    li { "Click " strong { "Choose your game folder" } " and pick the folder you found above, or click " strong { "I have the game CD as an .iso file" } " and pick the " code { ".iso" } "." }
                     li { "If the browser asks to “upload” files, say yes. They stay on your device." }
                     li { "Wait for the one-time install, then click " strong { "Start playing" } "." }
                 }
@@ -86,6 +92,8 @@ pub fn HarryPotter2() -> Element {
                 ul {
                     li { "“This folder does not contain the game”: you picked the wrong folder. Pick the one that contains " code { "Textures" } " with " code { "HP2_Master.utx" } " inside." }
                     li { "“This doesn’t look like the original game folder”: pick the folder the game was installed to, not a copy made by another tool." }
+                    li { "“This file is not the game CD”: pick the " code { ".iso" } " of the Harry Potter and the Chamber of Secrets CD." }
+                    li { "“The .iso file could not be read”: if it is open as a disc on this computer, eject it and try again." }
                     li { "“This browser cannot run the game”: switch to Chrome, Edge or Firefox." }
                 }
             }
