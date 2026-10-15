@@ -1,0 +1,17 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: mihaimateias
+
+resources:
+  - namespace.yaml
+  - site.yaml
+  - hp2-web.yaml
+  - cloudflared.yaml
+  - networkpolicy.yaml
+
+images:
+  - name: ghcr.io/cefege/mihaimateias.com
+    newTag: pending
+  - name: ghcr.io/cefege/hp2-web
+    newTag: pending
