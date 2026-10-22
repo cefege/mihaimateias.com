@@ -9,6 +9,6 @@ resources:
   - networkpolicy.yaml
 images:
   - name: ghcr.io/cefege/mihaimateias.com
-    newTag: sha-94e49f382323
+    newTag: sha-eae3ed407e76
   - name: ghcr.io/cefege/hp2-web
     newTag: sha-3054e02e8b2a
